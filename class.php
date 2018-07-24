@@ -9,9 +9,9 @@ $user->setLastName('Chitrakar');
 $user->setEmail('narenChitrakar.com');
 
 try {
-if( $user->isValid()) {
-	$user->register();	
-}
- } catch( \Exception $exeption ) {
+	if( $user->isValid()) {
+		$user->register();	
+	}
+} catch( \Exception $exeption ) {
  	echo $exeption->getMessage();
 }
